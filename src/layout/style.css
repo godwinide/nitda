@@ -1,0 +1,75 @@
+:root{
+    ---primary-color: #153212
+}
+
+.nav-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    margin: 0;
+    background-color: var(---primary-color);
+}
+
+.nav-wrapper .logo{
+    color: green;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.nav-wrapper .page-title{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.5em;
+}
+
+.nav-wrapper .search-wrap input{
+    border: none;
+    background-color: #C7CFD9;
+    width: 8em;
+    height: 3em;
+    border-radius: 10px;
+}
+
+.nav-wrapper .search-wrap button{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    text-transform: capitalize;
+}
+
+.nav-wrapper .admin-wrap{
+    color: #fff;
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-wrapper .admin-wrap i{
+    font-size: 1.8em;
+}
+
+.nav-wrapper .admin-wrap a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-wrapper{
+        font-size: 13px;
+    }
+
+    .hide-mobile{
+        display: none;
+    }
+
+    .search-wrap{
+        display: flex;
+        justify-content: center;
+        margin-left: 1em;
+    }
+}
